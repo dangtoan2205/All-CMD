@@ -12,6 +12,16 @@ docker volume rm $(docker volume ls -q)
 
 ```
 
+## Docker build
+
+```
+docker build --no-cache -t <name-images> .
+```
+VD:
+```
+docker build --no-cache -t snipeit-build .
+```
+
 ## Chạy container từ image vừa build
 
 ```
@@ -19,11 +29,6 @@ docker run --rm -it <name-images> bash
 
 ```
 
-## Docker build
-
-```
-docker build --no-cache -t <name-images> .
-```
 
 ## Kiểm tra cổng 8888
 
