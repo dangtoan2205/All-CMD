@@ -25,6 +25,19 @@ docker run --rm -it <name-images> bash
 docker build --no-cache -t <name-images> .
 ```
 
+## Kiểm tra cổng 8888
+
+```
+sudo lsof -i :8888
+```
+
+## Mở cổng kết nối
+
+```
+sudo ufw allow 8888
+sudo ufw reload
+```
+
 
 
 
